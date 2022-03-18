@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* conteudo até a borda*/
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(27, 27, 27);
+            color: white;
+            padding: 15px;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .melhoresperfumes{
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            
+        }
+    
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 15px;
+        }
+        
+        .menuloja:hover {
+            color: rgb(63, 63, 63);
+        }
+        .menulocalizacao:hover {
+            color: rgb(63, 63, 63);
+        }
+        .menucarrinho:hover {
+            color: rgb(63, 63, 63);
+        }
+        .menusobre:hover {
+            color: rgb(51, 51, 51);
+        }
+
+        .fotoperfumes {
+            border: none;
+        }
+        .perfume1:hover {
+            border: 1px solid black;  
+        }
+        .perfume2:hover {
+            border: 1px solid black;  
+        }
+        .perfume3:hover {
+            border: 1px solid black;  
+        }
+        .perfume4:hover {
+            border: 1px solid black;  
+        }
+        .container-redes {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site Top</h1>
+        
+        <nav class="menu">
+            <a class="menuloja" href="#">Loja</a>
+            <a class="menulocalizacao" href="#">Localização</a>
+            <a class="menucarrinho" href="#">Meu carrinho</a>
+            <a class="menusobre" href="#">Sobre nós</a>
+        </nav>
+    </header>
+    <main>
+        <section class="Melhor produto">
+            <h2 class="melhoresperfumes">Melhores Perfumes</h2>
+        </section>
+        <section class="fotoperfumes">
+            <img class="perfume1" src="imagens/imagem1.jpg" alt="perfume 1" width="300px">
+            <img class="perfume2" src="imagens/imagem2.jpg" alt="perfume 2" width="300px">
+            <img class="perfume3" src="imagens/imagem3.jpg" alt="perfume 3" width="300px">
+            <img class="perfume4" src="imagens/imagem4.jpg" alt="perfume 4" width="300px">
+        </section>
+    </main>
+    <footer class="container-redes" >
+        <p class="redes">Nossa redes sociais</p>
+    </footer>
+</body>
+</html>
